@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum - Gadiel Yadon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #004d61, #007b8a);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+
+            }
+            h2 {
+            color: #004d61;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        section {
+            padding: 2rem;
+        }
+        .proyectos a {
+            text-decoration: none;
+            color: #E60012;
+        }
+        .proyectos a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .btn-custom {
+            background-color: #FFD700;
+            color: #004d61;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #e6c200;
+            color: #003846;
+        }
+    </style>
+</head>
+<body>
+    <div id="cv-content">
+
+        <header>
+            <h1>Gadiel Yadon</h1>
+            <p>Técnico Informático con orientación en Diseño Web</p>
+            <img src="yo.jpg" alt="Foto de Gadiel Yadon">
+            <br>
+            <a href="https://gadielyadon.github.io/" class="btn btn-light mt-3" target="_blank"><i class="fab fa-github"></i> Ver mi repositorio</a>
+            <button class="btn btn-custom mt-3" onclick="generatePDF()"><i class="fas fa-file-pdf"></i> Descargar CV en PDF</button>
+        </header>
+        </header>
+    
+        <section>
+            <h2><i class="fas fa-user"></i> Sobre mí</h2>
+            <p>Soy Técnico Informático con orientación en Diseño Web, apasionado por el desarrollo de sitios modernos, responsivos y funcionales. Me capacito constantemente para seguir aprendiendo y creciendo en el área del desarrollo web y seguridad informatica.</p>
+        </section>
+    
+        <section>
+            <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+            <ul>
+            </ul>
+            <li>Primario completo - Escuela N° 341 san miguel - poman (2015)</li>
+            <li>Secundario completo - Colegio Juan Cayetano Bianchi, orientación Naturales (2021)</li>
+                <li>Tecnicatura en Informática con orientación en Diseño Web - Universidad Nacional de Catamarca (UNCA)</li>
+                <li>Tecnicatura en Informática con orientación en redes - (En curso)</li>
+                <li>Certificado Desarrollo Web Full Stack Jr. (Generación T, 240 hs, noviembre 2024)</li>
+                <li>Diplomatura en Desarrollo Web Full Stack (En curso)</li>
+                <li>Diplomatura en Ciberseguridad Informática (En curso)</li>
+                
+            </ul>
+        </section>
+            </ul>
+        </section>
+    
+        <section>
+            <h2><i class="fas fa-tools"></i> Habilidades Técnicas</h2>
+            <ul>
+                <li>HTML5, CSS, Bootstrap</li>
+                <li>JavaScript (básico/intermedio)</li>
+                <li>MySQL, XAMPP</li>
+                <li>Responsive Design, Mobile-First</li>
+                <li>Git y GitHub</li>
+            </ul>
+        </section>
+    
+        <section class="proyectos">
+            <h2><i class="fas fa-folder-open"></i> Proyectos Destacados</h2>
+            <ul>
+                <li><strong>GYG Minimarket</strong> — Página con listado de productos y carrito de compras (simulado).</li>
+                <li><strong>Kiosco Personal</strong> — Buscador de productos, diseño responsive, sin pagos reales.</li>
+                <li><strong>Repositorio de Proyectos:</strong> <a href="https://gadielyadon.github.io/" target="_blank">https://gadielyadon.github.io/</a></li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+            <ul>
+                <li><strong>Encargado de Caja</strong> – Ferretería Ali-jav Ferreteria<br>
+                Manejo de caja, atención al cliente, control de stock y cierre diario.</li>
+                <li><strong>Asistente Administrativo</strong> – Agencia Yadon automotores<br>
+                Tareas administrativas, manejo de Excel, cotizaciones, gestión de sistemas internos y soporte en diversas áreas.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2><i class="fas fa-envelope"></i> Contacto</h2>
+            <p>📧 Email: gadielyf.2004@gmail.com</p>
+            <p>📱 Teléfono: 3834-755724</p>
+            <p>🌐 Repositorio: <a href="https://gadielyadon.github.io/" target="_blank">https://gadielyadon.github.io/</a></p>
+        </section>
+    
+        <footer>
+            <p>© 2025 Gadiel Yadon - Disponible para trabajar freelance o en relación de dependencia.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function generatePDF() {
+            const element = document.getElementById('cv-content');
+            const opt = {
+                margin:       0.5,
+                filename:     'CV_Gadiel_Yadon.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().from(element).set(opt).save();
+        }
+    </script>
+</body>
+</html>
